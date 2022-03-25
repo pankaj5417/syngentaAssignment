@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" >
+    <title>Document</title>
+    <!-- <script async src="https://api.countapi.xyz/hit/bololo/6d3139b2-da5c-4e6d-9e14-b7bba1a9ce59?callback=websiteVisits"></script> -->
+  </head>
+  <body>
+    <div id="user-agent-container">
+      <div class="browser-container">
+        <p>Browser Details</p>
+
+        <button onclick="getUserAgentDetails()">Show Browser Details</button>
+        <table >
+          <tr>
+            <td id="browser-family"></td>
+            <td id="client-engine"></td>
+            <td id="client-name"></td>
+          </tr>
+          
+          <tr>
+            <td id="device-brand"></td>
+            <td id="device-type"></td>
+          </tr>
+          
+          <tr>
+            <td id="os-name"></td>
+            <td id="os-platform"></td>
+          </tr>
+          <tr>
+            <td id="os-family"></td>
+            <td id="user-agent"></td>
+          </tr>
+      </table>
+    </div>
+    </div>
+
+    <h1>This site has been visited <span id="visits"></span> times.</h1>
+  </body>
+</html>
+<script src="NoOfVisitor.js"></script>
+<script src="userAgentDetails.js"></script>
