@@ -1,4 +1,4 @@
-# A web application to detect the web browser and details of device and count the number of visitors to the website.
+## A web application to detect the web browser and details of device and count the number of visitors to the website.
 # FRONTEND
 
 ## Technologies Used :
@@ -41,6 +41,6 @@
  * http://localhost:2346/book/{catergory name}
 
 # For Getting the book title or author from the database use postman
- * http://localhost:2346/book/search/{title or author name}
+ * http://localhost:2346/book/search/[{title or author name}]
  
 
