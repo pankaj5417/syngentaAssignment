@@ -38,9 +38,9 @@
  * http://localhost:2346/book
  
   # For Getting the book category from the database use postman
- * http://localhost:2346/book/{catergory name}
+ * http://localhost:2346/book/ {catergory name}
 
 # For Getting the book title or author from the database use postman
- * http://localhost:2346/book/search/[{title or author name}]
+ * http://localhost:2346/book/search/ {title or author name}
  
 
