@@ -3,7 +3,7 @@
 async function getUserAgentDetails() {
   try{
     const response = await fetch(
-      " https://api.apicagent.com/?ua=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.82 Safari/537.36"
+      ` https://api.apicagent.com/?ua=${navigator.userAgent}`
     );
     const data = await response.json();
     console.log(data);
@@ -17,9 +17,9 @@ async function getUserAgentDetails() {
 //function to show the User agent details
 function showAgentDetails(data) {
   const {
-    client: { engine, name },
+    client: { engine, name , version},
     device: { brand, type },
-    os: { platform, version },
+    os: { platform },
     os_family,
     user_agent,
   } = data;
@@ -27,6 +27,7 @@ function showAgentDetails(data) {
   document.getElementById("browser-family").innerHTML = data.browser_family;
 
   document.getElementById("client-engine").innerHTML = engine;
+  document.getElementById("client-version").innerHTML = version;
 
   document.getElementById("client-name").innerHTML = name;
   document.getElementById("device-brand").innerHTML = brand;
@@ -38,8 +39,5 @@ function showAgentDetails(data) {
   document.getElementById("user-agent").innerHTML = user_agent;
 }
 let browserContainer=document.getElementById("user-agent-container")
-browserContainer.style.backgroundColor="orange"
-browserContainer.style.width="90%"
-browserContainer.style.height="500px"
 browserContainer.style.margin="auto"
 browserContainer.style.border="1px solid lightgray"

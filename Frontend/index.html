@@ -12,33 +12,79 @@
     <div id="user-agent-container">
       <div class="browser-container">
         <p>Browser Details</p>
+        
+        <button class="btn" onclick="getUserAgentDetails()">Click here to see the Browser Details</button>
+        
+        <div>
+          <span> Browser family:&nbsp;</span>
+          <span id="browser-family"></span>
+          
+        </div>
+        <div>
+          <span>Client-engine:&nbsp;</span>
+          <span id="client-engine"></span>
+          
+        </div>
+        <div>
+          <span>Client-version:&nbsp;</span>
+          <span id="client-version"></span>
+          
+        </div>
+          <div>
+            <span>Client-Name:&nbsp;</span>
+            <span id="client-name"></span>
 
-        <button onclick="getUserAgentDetails()">Show Browser Details</button>
-        <table >
-          <tr>
-            <td id="browser-family"></td>
-            <td id="client-engine"></td>
-            <td id="client-name"></td>
-          </tr>
+          </div>
+          <div>
+            <span>Device-Brand:&nbsp;</span>
+            <span id="device-brand"></span>
+            
+          </div>
+          <div>
+            <span>Device-Type:&nbsp;</span>
+            <span id="device-type"></span>
+
+          </div>
+          <div>
+            <span>Os-Name:&nbsp;</span>
+            <span id="os-name"></span>
+
+          </div>
+          <div>
+            <span>Os-Platform:&nbsp;</span>
+
+            <span id="os-platform"></span>
+          </div>
+          <div>
+            <span>Os-Family:&nbsp;</span>
+            <span id="os-family"></span>
+
+          </div>
+          <div>
+            <span>Client-engine:&nbsp;</span>
+            
+          </div>
+          <div>
+            <span>User Agent:&nbsp;</span>
+            
+            <span id="user-agent"></span>
+          </div>
+         
           
-          <tr>
-            <td id="device-brand"></td>
-            <td id="device-type"></td>
-          </tr>
           
-          <tr>
-            <td id="os-name"></td>
-            <td id="os-platform"></td>
-          </tr>
-          <tr>
-            <td id="os-family"></td>
-            <td id="user-agent"></td>
-          </tr>
-      </table>
+          
+          
+          
+          
+          
+          
+    
     </div>
     </div>
+     <div class="footer-container">
+       <h1>This site has been visited <span id="visits"></span> times.</h1>
 
-    <h1>This site has been visited <span id="visits"></span> times.</h1>
+     </div>
   </body>
 </html>
 <script src="NoOfVisitor.js"></script>
